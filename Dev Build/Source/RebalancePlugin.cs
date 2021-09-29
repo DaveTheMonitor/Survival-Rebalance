@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Linq;
-using System.Xml;
 using System.IO;
-using System.Text;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Security.Cryptography;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
