@@ -57,7 +57,7 @@ You can message me on Discord if you're in the Total Miner Discord server: Dave 
     <LockAmuletOfFlight>true</LockAmuletOfFlight>
 
     <!--Enables debug mode, which re-enables the NPCSpawn block and gives you access to debug features.-->
-    <DebugMode>false</DebugMode>
+    <DebugMode>true</DebugMode>
 
     <!--
         ===VISUAL==
