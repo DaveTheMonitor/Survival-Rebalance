@@ -1,0 +1,31 @@
+Survival Rebalance has an experimental combat system that changes weapons to deal damage based on both their base damage and the enemy's defence.
+
+By default, attacks have a chance to deal semi-random damage against targets, the chance of which decreases the higher the target's defence is. Eg. an NPC with 60 defence will take damage from attacks less often than an NPC with 20 defence. The chance of dealing damage against an enemy increases the higher the player's attack skill/level, and the damage dealt increases with the player's strength skill/level.
+
+The experimental combat system replaces the existing system with a custom one, in which weapons deal damage equal to their base damage, modified by slight randomness and the target's defence. This combat system only affects your attacks, not the enemy's. This combat system also does not consider your skills when attacking. This combat system also works with modded weapons. This combat system can be disabled in the config if you wish. The calculations for damage are detailed below.
+This combat system is very experimental, and I'm open to feedback.
+Notes:
+ - At the moment, the experimental combat system does not use the Crit hitbox of the target.
+ - The target will take knockback in the direction you are facing based on how much damage you deal.
+ - The difference in damage against defence is based off your damage and the target's defence. The higher your damage, the less affected it is by the target's defence.
+ - - Calculated Damage = Damage² * 0.8 / Defence (Min 5%, Max 100%)
+ - - If your damage is 125% or more of the target's defence, you will deal 100% damage.
+ - - If your damage is 100% of the target's defence, you will deal 80% damage.
+ - - If your damage is 75% of the target's defence, you will deal 60% damage.
+ - - If your damage is 62.5% of the target's defence, you will deal 50% damage.
+ - - If your damage is 50% of the target's defence, you will deal 40% damage.
+ - - If your damage is 25% of the target's defence, you will deal 20% damage.
+
+Known Issues:
+ - Enemies do not target the player when attacked. This could be a bug with the game, and not the mod.
+ - Orange damage numbers (crits) seem to appear even if no crit is landed, due to the game using a different crit system. This does not appear to affect damage.
+ - This combat system sets every weapon's reach to 0. As far as I know, this is required.
+
+Crit chance = 5% OR 15% w/ Amulet of Fury (Crit damage = 1.5x)
+Damage = Random(WeaponDamage * 0.9, WeaponDamage * 1.1) * Crit? * Clamp(Damage * 0.8f / TargetDefence, 0.05, 1)
+
+C# Code:
+bool crit = player.IsItemEquippedAndUsable(Item.AmuletOfFury) ? rand.Next(0, 100) < 15 : rand.Next(0, 100) < 5;
+float damage = crit ? rand.Next((int)(data.Damage * 0.9f), (int)(data.Damage * 1.1f)) * 1.5f : rand.Next((int)(data.Damage * 0.9f), (int)(data.Damage * 1.1f));
+int defence = npcLevelData[prevDifficulty].ContainsKey(ActorTypes[target.ActorType].LevelType) ? npcLevelData[prevDifficulty][ActorTypes[target.ActorType].LevelType].DefenceLevel : Globals1.NpcLevelData[(int)ActorTypes[target.ActorType].LevelType].DefenceLevel;
+damage *= MathHelper.Clamp(damage * 0.8f / defence, 0.05f, 1);

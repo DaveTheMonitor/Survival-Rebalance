@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+
+<!--Development version of the Rebalance mod. If you encounter any issues, please let me know.
+You can message me on Discord if you're in the Total Miner Discord server: Dave The Monitor#6212-->
+
+<RebalanceConfigXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!--
+        ===GAME==
+    -->
+
+    <!--Actors that should be considered enemies and should be affected by tier spawns.
+    Actors that are not in this array will not be affected by tier spawns.
+    You should only modify this if you want to add other actors to spawn tiers.-->
+    <!--Modded actors are not supported and will cause an error when loading the mod.-->
+    <EnemyActors>
+        <ActorType>Dryad</ActorType>
+        <ActorType>Djinn</ActorType>
+        <ActorType>Goblin</ActorType>
+        <ActorType>Orc</ActorType>
+        <ActorType>TrollChief</ActorType>
+        <ActorType>TrollBoy</ActorType>
+        <ActorType>Werewolf</ActorType>
+        <ActorType>Diablo</ActorType>
+        <ActorType>Zombie</ActorType>
+    </EnemyActors>
+
+    <!--Legendary weapons that should be locked behind a Diablo kill (Aestus Flask use) if LockLegendaryWeapons is true.-->
+    <LegendaryWeapons>
+        <Item>BattleAxe</Item>
+        <Item>ElvenBow</Item>
+    </LegendaryWeapons>
+
+    <!--Legendary items that should be locked behind a Diablo kill (Aestus Flask use) if LockAllLegendaryItems is true.
+    This requirement may change in the future to differentiate it from LegendaryWeapons.
+    This array could also be replaced entirely by LegendaryWeapons in the future.-->
+    <LegendaryItems>
+        <Item>BattleAxe</Item>
+        <Item>ElvenBow</Item>
+        <Item>SledgeHammer</Item>
+        <Item>GreenstoneGoldSledgeHammer</Item>
+        <Item>WaterTalisman</Item>
+        <Item>TenLeagueBoots</Item>
+    </LegendaryItems>
+
+    <!--Whether or not the experimental custom Rebalance combat system should be used. More info in the related text file.-->
+    <NewCombat>true</NewCombat>
+
+    <!--Whether or not enemy spawns are locked behind tiers.-->
+    <EnableTierSpawns>true</EnableTierSpawns>
+
+    <!--Whether or not legendary weapons, as defined above, are locked behind a Diablo kill (Aestus Flask use).-->
+    <LockLegendaryWeapons>true</LockLegendaryWeapons>
+
+    <!--Whether or not all legendary items, as defined above, are locked behind a Diablo kill. (Aestus Flask use).-->
+    <LockAllLegendaryItems>true</LockAllLegendaryItems>
+
+    <!--Whether or not the Amulet of Flight is locked behind an unlock requirement.
+    The unlock requirement for the Amulet Of Flight has not yet been decided.-->
+    <LockAmuletOfFlight>true</LockAmuletOfFlight>
+
+    <!--The time, in seconds, between each tier update check. Increasing this value will cause the world's tier to update less frequently, but will be more performant.-->
+    <TierUpdateInterval>10</TierUpdateInterval>
+
+    <!--Enables debug mode, which re-enables the NPCSpawn block and gives you access to debug features. Can also be toggled with F5.-->
+    <DebugMode>true</DebugMode>
+
+    <!--
+        ===VISUAL==
+    -->
+
+    <!--The scale of the debug text in the bottom left corner of the screen. Also affects the Dev Build text.-->
+    <DebugTextScale>0.5</DebugTextScale>
+
+    <!--
+        Message Options (Rejected item, Aestus Flask used)
+    -->
+
+    <!--The time, in seconds, the message lasts on screen. The Aestus Flask message lasts for twice this time.-->
+    <MessageTime>3.7</MessageTime>
+
+    <!--The scale of the message.-->
+    <MessageScale>2.4</MessageScale>
+
+    <!--The velocity of the message. The Aestus Flask message moves at half this velocity.-->
+    <MessageVelocity>
+        <X>0</X>
+        <Y>-20</Y>
+    </MessageVelocity>
+
+    <!--The color of the standard rejection message.-->
+    <RejectionMessageColor>
+        <R>240</R>
+        <G>22</G>
+        <B>15</B>
+        <A>255</A>
+    </RejectionMessageColor>
+
+    <!--The color of the Aestus Flask message.-->
+    <AestusMessageColor>
+        <R>202</R>
+        <G>104</G>
+        <B>31</B>
+        <A>255</A>
+    </AestusMessageColor>
+</RebalanceConfigXML>

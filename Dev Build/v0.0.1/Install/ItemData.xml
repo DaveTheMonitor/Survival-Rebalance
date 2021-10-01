@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfModItemDataXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModItemDataXML>
+    <ItemID>AestusFlask</ItemID>
+    <Name>Aestus Flask</Name>
+    <Desc>It's filled with a liquid that resembles some sort of flame... It radiates with powerful energy.</Desc>
+    <IsValid>true</IsValid>
+    <IsEnabled>true</IsEnabled>
+    <LockedDD>false</LockedDD>
+    <LockedCR>false</LockedCR>
+    <LockedSU>false</LockedSU>
+    <HasItemProxy>false</HasItemProxy>
+    <MinCSPrice>0</MinCSPrice>
+    <StackSize>100</StackSize>
+    <Durability>0</Durability>
+    <StrikeDamage>0</StrikeDamage>
+    <StrikeReach>0</StrikeReach>
+    <HealPower>0</HealPower>
+    <BurnTime>600</BurnTime>
+    <SmeltTime>0</SmeltTime>
+    <ParticleLight>0</ParticleLight>
+    <SelectFlag>Fill</SelectFlag>
+    <CanDropIfLocked>false</CanDropIfLocked>
+    <DropChance>0</DropChance>
+    <Plural>S</Plural>
+  </ModItemDataXML>
+</ArrayOfModItemDataXML>
