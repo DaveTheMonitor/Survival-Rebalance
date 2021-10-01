@@ -1,3 +1,7 @@
+# DON'T USE THIS BUILD
+
+I was an idiot and left in the player damage every tier update. There should be a new dev build releasing soon.
+
 # Survival Balance Development Build
 
 This is a development build of Survival Rebalance. That means that some features may be unoptimized, may be removed, or just may not work at all.
