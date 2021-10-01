@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+
+<!--Development version of the Rebalance mod. If you encounter any issues, please let me know.
+You can message me on Discord if you're in the Total Miner Discord server: Dave The Monitor#6212-->
+
+<ArrayOfRebalanceTierXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!--You can add custom tiers here. Tiers should be in order of progression.
+    Tiers cannot backtrack; once a tier is reached, it is unlocked permanently or until a higher tier is reached.
+    Each tier should contain the spawns of its successor.
+    Modded items and actors are now supported since v0.1.1.-->
+
+    <!--No Tier-->
+    <RebalanceTierXML>
+        <Items>
+            <string>None</string>
+        </Items>
+        <Spawns>
+            <ActorType>Goblin</ActorType>
+        </Spawns>
+    </RebalanceTierXML>
+
+    <!--Wood-->
+    <RebalanceTierXML>
+        <Items>
+            <string>WoodBow</string>
+            <string>FlintArrow</string>
+            <string>WoodHatchet</string>
+            <string>WoodPickaxe</string>
+            <string>WoodShield</string>
+            <string>WoodShovel</string>
+            <string>WoodSpear</string>
+            <string>WoodSword</string>
+            <string>LeatherBody</string>
+            <string>LeatherBoots</string>
+            <string>LeatherGauntlets</string>
+            <string>LeatherHelmet</string>
+            <string>LeatherLeggings</string>
+            <string>Coif</string>
+        </Items>
+        <Spawns>
+            <string>Goblin</string>
+        </Spawns>
+    </RebalanceTierXML>
+
+    <!--Iron-->
+    <RebalanceTierXML>
+        <Items>
+            <string>IronArrow</string>
+            <string>IronHatchet</string>
+            <string>IronPickaxe</string>
+            <string>IronShield</string>
+            <string>IronShovel</string>
+            <string>IronHoe</string>
+            <string>IronScythe</string>
+            <string>IronSpear</string>
+            <string>IronSword</string>
+            <string>IronBattleAxe</string>
+            <string>IronBody</string>
+            <string>IronBoots</string>
+            <string>IronGauntlets</string>
+            <string>IronHelmet</string>
+            <string>IronLeggings</string>
+        </Items>
+        <Spawns>
+            <string>Goblin</string>
+            <string>Zombie</string>
+        </Spawns>
+    </RebalanceTierXML>
+
+    <!--Steel-->
+    <RebalanceTierXML>
+        <Items>
+            <string>GoldenBow</string>
+            <string>SteelArrow</string>
+            <string>SteelHatchet</string>
+            <string>SteelPickaxe</string>
+            <string>SteelShield</string>
+            <string>SteelShovel</string>
+            <string>SteelHoe</string>
+            <string>SteelScythe</string>
+            <string>SteelSpear</string>
+            <string>SteelSword</string>
+            <string>SteelClaymore</string>
+            <string>SteelKatana</string>
+            <string>SteelScimitar</string>
+            <string>SteelPike</string>
+            <string>SteelBattleAxe</string>
+            <string>SteelBody</string>
+            <string>SteelBoots</string>
+            <string>SteelGauntlets</string>
+            <string>SteelHelmet</string>
+            <string>SteelLeggings</string>
+        </Items>
+        <Spawns>
+            <string>Goblin</string>
+            <string>Zombie</string>
+            <string>Dryad</string>
+            <string>Werewolf</string>
+        </Spawns>
+    </RebalanceTierXML>
+
+    <!--GSG-->
+    <RebalanceTierXML>
+        <Items>
+            <string>GreenstoneGoldHatchet</string>
+            <string>GreenstoneGoldPickaxe</string>
+            <string>GreenstoneGoldShield</string>
+            <string>GreenstoneGoldShovel</string>
+            <string>GreenstoneGoldSword</string>
+            <string>GreenstoneGoldBattleAxe</string>
+        </Items>
+        <Spawns>
+            <string>Goblin</string>
+            <string>Zombie</string>
+            <string>Dryad</string>
+            <string>Werewolf</string>
+            <string>Djinn</string>
+            <string>Orc</string>
+        </Spawns>
+    </RebalanceTierXML>
+
+    <!--Diamond-->
+    <RebalanceTierXML>
+        <Items>
+            <string>TrollBow</string>
+            <string>DiamondArrow</string>
+            <string>DiamondHatchet</string>
+            <string>DiamondPickaxe</string>
+            <string>DiamondShield</string>
+            <string>DiamondShovel</string>
+            <string>DiamondHoe</string>
+            <string>DiamondScythe</string>
+            <string>DiamondSpear</string>
+            <string>DiamondSword</string>
+            <string>DiamondBattleAxe</string>
+        </Items>
+        <Spawns>
+            <string>Goblin</string>
+            <string>Zombie</string>
+            <string>Dryad</string>
+            <string>Werewolf</string>
+            <string>Djinn</string>
+            <string>Orc</string>
+            <string>TrollBoy</string>
+        </Spawns>
+    </RebalanceTierXML>
+
+    <!--Ruby-->
+    <RebalanceTierXML>
+        <Items>
+            <string>RubyArrow</string>
+            <string>RubyPickaxe</string>
+            <string>RubySword</string>
+            <string>RubyBattleAxe</string>
+            <string>RubyWarHammer</string>
+            <string>TrollHideBody</string>
+            <string>TrollHideBoots</string>
+            <string>TrollHideGauntlets</string>
+            <string>TrollHideHelmet</string>
+            <string>TrollHideLeggings</string>
+        </Items>
+        <Spawns>
+            <string>Goblin</string>
+            <string>Zombie</string>
+            <string>Dryad</string>
+            <string>Werewolf</string>
+            <string>Djinn</string>
+            <string>Orc</string>
+            <string>TrollBoy</string>
+            <string>TrollChief</string>
+        </Spawns>
+    </RebalanceTierXML>
+    
+    <!--Titanium-->
+    <RebalanceTierXML>
+        <Items>
+            <string>TitaniumBow</string>
+            <string>TitaniumArrow</string>
+            <string>TitaniumPickaxe</string>
+            <string>TitaniumSword</string>
+            <string>TitaniumKatana</string>
+            <string>TitaniumBattleAxe</string>
+            <string>TitaniumWarHammer</string>
+            <string>TitaniumBody</string>
+            <string>TitaniumBoots</string>
+            <string>TitaniumGauntlets</string>
+            <string>TitaniumHelmet</string>
+            <string>TitaniumLeggings</string>
+            <string>DiamantiumBody</string>
+            <string>DiamantiumBoots</string>
+            <string>DiamantiumGauntlets</string>
+            <string>DiamantiumHelmet</string>
+            <string>DiamantiumLeggings</string>
+        </Items>
+        <Spawns>
+            <string>Goblin</string>
+            <string>Zombie</string>
+            <string>Dryad</string>
+            <string>Werewolf</string>
+            <string>Djinn</string>
+            <string>Orc</string>
+            <string>TrollBoy</string>
+            <string>TrollChief</string>
+            <string>Diablo</string>
+        </Spawns>
+    </RebalanceTierXML>
+</ArrayOfRebalanceTierXML>
