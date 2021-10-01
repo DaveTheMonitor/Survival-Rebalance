@@ -1,6 +1,6 @@
 # DON'T USE THIS BUILD
 
-I was an idiot and left in the player damage every tier update. There should be a new dev build releasing soon.
+I was an idiot and left in the player damage every tier update. Use v0.1.1
 
 # Survival Balance Development Build
 
