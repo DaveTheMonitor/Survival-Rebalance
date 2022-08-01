@@ -1,8 +1,11 @@
 # Survival Balance Development Build
 
 ```diff
-- Do not use any version below v0.1.2. These versions use BinaryFormatter to read/write data, which can be a security risk.
-+ The newer versions use BinaryReader/BinaryWriter instead. Save data from below v0.1.2 will not be loaded in v0.1.2 and above.
+- Do not use version v0.1.1 or below.
+- These versions use BinaryFormatter to read/write data, which can be a security risk.
++ V0.1.2 and above use BinaryReader/BinaryWriter instead.
+- Save data from below v0.1.2 will not be loaded in v0.1.2 and above.
+    Delete the "rebalance.dat" file in your world's folder to reset the data manually.
 ```
 
 Here you can choose which Survival Rebalance development build you want to download. All released development builds should be available here.
